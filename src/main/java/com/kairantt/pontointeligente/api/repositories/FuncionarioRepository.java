@@ -1,11 +1,12 @@
 package com.kairantt.pontointeligente.api.repositories;
 
-import com.kairantt.pontointeligente.api.entities.Funcionario;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.kairantt.pontointeligente.api.entities.Funcionario;
+
 @Transactional(readOnly = true)
-public interface FuncionarioRepository extends CrudRepository<Funcionario, Long> {
+public interface FuncionarioRepository extends JpaRepository<Funcionario, Long> {
 
 	Funcionario findByCpf(String cpf);
 	

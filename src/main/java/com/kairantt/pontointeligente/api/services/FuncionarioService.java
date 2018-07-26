@@ -1,8 +1,8 @@
 package com.kairantt.pontointeligente.api.services;
 
-import com.kairantt.pontointeligente.api.entities.Funcionario;
-
 import java.util.Optional;
+
+import com.kairantt.pontointeligente.api.entities.Funcionario;
 
 public interface FuncionarioService {
 	
